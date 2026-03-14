@@ -1,0 +1,94 @@
+@import "colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+/* ALL ISLANDS */
+#custom-arch,
+#workspaces,
+#clock,
+#pulseaudio,
+#bluetooth,
+#network,
+#battery,
+#tray {
+    background-color: @bg;
+    color: @text;
+    padding: 0 12px;
+    margin: 6px 3px;
+    border-radius: 10px;
+    border: 1px solid @accent; /* Dynamic border color */
+}
+
+/* Dynamic Arch Logo */
+#custom-arch {
+    color: @accent; /* Now changes with theme! */
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: @text;
+}
+
+#custom-wallpaper {
+    background-color: @bg;
+    color: @accent;
+    padding: 0 15px;
+    margin: 6px 3px;
+    border-radius: 10px;
+    border: 1px solid @accent;
+}
+
+#custom-wallpaper:hover {
+    background-color: @accent;
+    color: @bg;
+}
+
+#custom-power {
+    background-color: @bg;
+    color: #f38ba8; /* A nice soft red for power */
+    padding: 0 15px;
+    margin: 6px 3px;
+    border-radius: 10px;
+    border: 1px solid @accent;
+}
+
+#custom-power:hover {
+    background-color: #f38ba8;
+    color: @bg;
+}
+
+#workspaces button.active {
+    color: @accent;
+}
+
+#clock {
+    color: @accent;
+}
+
+/* Tray Fix: Ensuring icons have space and visibility */
+#tray {
+    padding: 0 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #f38ba8;
+}
+
+#battery.critical {
+    color: #f38ba8;
+}
