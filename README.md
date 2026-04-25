@@ -1,3 +1,9 @@
+
+##THESE ARE VERY OLD AND IS PRETTY MUCH FIRST RICE ATTEMPT
+
+
+
+
 # 🍚 Hyprland Rice with Pywal 🍚
 > Dynamic colors, GNU Stow management, and automated theme switching on Arch Linux.
 
